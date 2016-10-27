@@ -10,7 +10,13 @@
 <allocations>
     <!-- Limit on running jobs in the pool. If more jobs are submitted,
          <!-- Example element for configuring a pool -->
-  <pool name="pool1">
+  <pool name="hduser">
+    <!-- Minimum  and maximumshares of map and reduce slots. Defaults to 0. -->
+    <minMaps>10</minMaps>
+    <minReduces>5</minReduces>
+    <maxMaps>25</maxMaps>
+    <maxReduces>25</maxReduces>
+     <pool name="default">
     <!-- Minimum  and maximumshares of map and reduce slots. Defaults to 0. -->
     <minMaps>10</minMaps>
     <minReduces>5</minReduces>
